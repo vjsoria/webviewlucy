@@ -104,9 +104,11 @@
        MessengerExtensions.getUserID(function success(uids) {
          //window.attachApp(uids.psid, gift);
          console.log(uids.psid);
+         alert(uids.psid);
        }, function error(err) {
          //window.attachApp();
-         console.log(uids.psid);
+         alert(err);
+         console.log(err);
        });
      };
      (function(doc, script, domId){
@@ -123,7 +125,7 @@
   var cb = function() {
     var l = document.createElement('link');
     l.rel = 'stylesheet';
-    l.href = 'demo.d31752026862ddf053a6.css';
+    l.href = 'demo.bc93547887d0783f783a.css';
     var h = document.getElementsByTagName('head')[0];
     h.parentNode.insertBefore(l, h);
   };
@@ -136,4 +138,4 @@
   }
   else {
     window.addEventListener('load', cb);
-  }</script><script src="demo.d31752026862ddf053a6.js"></script></body></html>
+  }</script><script src="demo.bc93547887d0783f783a.js"></script></body></html>
