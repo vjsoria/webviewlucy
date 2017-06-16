@@ -102,12 +102,10 @@
     }</style><div class="loader"><svg width="86px" height="86px" viewBox="0 0 86 86" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M41.0490478,20.6768643 L17.8547908,65.2286127 L25.5897656,65.2286127 L32.3491405,52.3062782 L53.1781012,52.3062782 L60.0257263,65.2286127 L68.1699485,65.2286127 L44.6401475,20.6768643 L41.0490478,20.6768643 L41.0490478,20.6768643 L41.0490478,20.6768643 Z M49.6810702,45.3830102 L35.9780619,45.3830102 L42.8460523,32.2579914 L49.6810702,45.3830102 L49.6810702,45.3830102 L49.6810702,45.3830102 Z" class="icon"></path></svg></div><div id="message"></div></div><script>window.extAsyncInit = function() {
        // the Messenger Extensions JS SDK is done loading
        MessengerExtensions.getUserID(function success(uids) {
-         //window.attachApp(uids.psid, gift);
-         alert(uids.psid);         
          console.log(uids.psid);
+         window.attachApp(uids.psid); 
        }, function error(err) {
-         //window.attachApp();
-         alert(err);
+         alert("Error: "+err);
          console.log(err);
        });
      };
@@ -121,11 +119,11 @@
        js.src = "//connect.facebook.com/en_US/messenger.Extensions.js";
        fjs.parentNode.insertBefore(js, fjs);
      }(document, 'script', 'Messenger'));
-       
+
   var cb = function() {
     var l = document.createElement('link');
     l.rel = 'stylesheet';
-    l.href = 'demo.4102b44f2f5059b9c3e7.css';
+    l.href = 'demo.be2e681dbb486ad31a67.css';
     var h = document.getElementsByTagName('head')[0];
     h.parentNode.insertBefore(l, h);
   };
@@ -138,4 +136,4 @@
   }
   else {
     window.addEventListener('load', cb);
-  }</script><script src="demo.4102b44f2f5059b9c3e7.js"></script></body></html>
+  }</script><script src="demo.be2e681dbb486ad31a67.js"></script></body></html>
