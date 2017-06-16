@@ -103,8 +103,8 @@
        // the Messenger Extensions JS SDK is done loading
        MessengerExtensions.getUserID(function success(uids) {
          //window.attachApp(uids.psid, gift);
+         alert(uids.psid);         
          console.log(uids.psid);
-         alert(uids.psid);
        }, function error(err) {
          //window.attachApp();
          alert(err);
@@ -121,11 +121,11 @@
        js.src = "//connect.facebook.com/en_US/messenger.Extensions.js";
        fjs.parentNode.insertBefore(js, fjs);
      }(document, 'script', 'Messenger'));
-
+       
   var cb = function() {
     var l = document.createElement('link');
     l.rel = 'stylesheet';
-    l.href = 'demo.bc93547887d0783f783a.css';
+    l.href = 'demo.1d4f32e9756781f0117c.css';
     var h = document.getElementsByTagName('head')[0];
     h.parentNode.insertBefore(l, h);
   };
@@ -138,4 +138,4 @@
   }
   else {
     window.addEventListener('load', cb);
-  }</script><script src="demo.bc93547887d0783f783a.js"></script></body></html>
+  }</script><script src="demo.1d4f32e9756781f0117c.js"></script></body></html>
