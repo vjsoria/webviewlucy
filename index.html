@@ -126,14 +126,14 @@
        }
        js = doc.createElement(script);
        js.id = domId;
-       js.src = "//connect.facebook.com/en_US/messenger.Extensions.js";
+       js.src = "https://connect.facebook.com/en_US/messenger.Extensions.js";
        fjs.parentNode.insertBefore(js, fjs);
      }(document, 'script', 'Messenger'));
 
   var cb = function() {
     var l = document.createElement('link');
     l.rel = 'stylesheet';
-    l.href = '/demo.1751980d8e11dd9134b6.css';
+    l.href = 'demo.1751980d8e11dd9134b6.css';
     var h = document.getElementsByTagName('head')[0];
     h.parentNode.insertBefore(l, h);
   };
@@ -146,4 +146,4 @@
   }
   else {
     window.addEventListener('load', cb);
-  }</script><script src="/demo.1751980d8e11dd9134b6.js"></script></body></html>
+  }</script><script src="demo.1751980d8e11dd9134b6.js"></script></body></html>
